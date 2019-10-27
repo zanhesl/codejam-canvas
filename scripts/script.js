@@ -38,6 +38,7 @@ resizeButtons[0].addEventListener(`click`, (evt) => {
 resizeButtons[1].addEventListener(`click`, (evt) => {
   drawBackgroundRGB(image32x32);
 })
+  
 
 resizeButtons[2].addEventListener(`click`, (evt) => {
   ctx.drawImage(imageSrc, 0, 0, 256, 256);
