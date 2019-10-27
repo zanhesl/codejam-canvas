@@ -17,7 +17,7 @@ function drawBackgroundHash(image) {
 function drawBackgroundRGB(image){
   for (let i = 0; i < image.length; i++) {
     for (var j = 0; j < image[0].length; j++) {
-      ctx.fillStyle = `rgba(${image[i][j][0]}, ${image[i][j][1]}, ${image[i][j][2]}, ${image[i][j][3]})`;
+      ctx.fillStyle = `rgba(${image[i][j][0]}, ${image[i][j][1]}, ${image[i][j][2]}, ${image[i][j][3] / 255})`;
       ctx.fillRect(j, i, 1, 1);
     }
   }
@@ -38,7 +38,7 @@ resizeButtons[0].addEventListener(`click`, (evt) => {
 resizeButtons[1].addEventListener(`click`, (evt) => {
   drawBackgroundRGB(image32x32);
 })
-  
+
 
 resizeButtons[2].addEventListener(`click`, (evt) => {
   ctx.drawImage(imageSrc, 0, 0, 256, 256);
