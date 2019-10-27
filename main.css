@@ -45,14 +45,19 @@ div {
 .canvas-container {
   border: 1px solid grey;
   position: absolute;
-  left: 40%;
-  top: 30%;
-  width: 256px;
-  height: 256px;
+  left: 30%;
+  top: 20%;
+  width: 512px;
+  height: 512px;
 
   display: flex;
 }
 
+.source-image {
+  display: none;
+}
+
 #canvas-main {
   margin: auto;
+  image-rendering: pixelated;
 }
