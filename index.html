@@ -2,42 +2,53 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./main.css">
     <title></title>
   </head>
   <body>
     <header class="main-header">
-      <button type="button" class="menu-button"></button>
+      <button type="button" class="menu-button">
+        <img src="./assets/img/menu.png" alt="menu">
+      </button>
       <h1>CodeJam-Canvas</h1>
     </header>
     <main>
       <div class="tools">
         <button type="button" class="fill">
-          Fill(F)
+          <img src="./assets/img/fill-icon.png" alt="Fill">
+          <p>Fill(F)</p>
         </button>
         <button type="button" class="color">
-          Color(C)
+          <img src="./assets/img/change-color-icon-3.png" alt="Color">
+          <p>Color(C)</p>
         </button>
         <button type="button" class="move">
-          Move(M)
+          <img src="./assets/img/move.png" alt="Move">
+          <p>Move(M)</p>
         </button>
         <button type="button" class="transform">
-          Transform(T)
+          <img src="./assets/img/transform.png" alt="Transform">
+          <p>Transform(T)</p>
         </button>
       </div>
 
       <div class="colors-palette">
         <button type="button" class="current-color">
-          Current Color
+          <div class="current-color__color"></div>
+          <p>Current Color</p>
         </button>
         <button type="button" class="previous-color">
-          Previous Color
+          <div class="current-color__color"></div>
+          <p>Previous Color</p>
         </button>
         <button type="button" class="color-selected-1">
-          Red
+          <div class="current-color__color"></div>
+          <p>Red</p>
         </button>
         <button type="button" class="color-selected-2">
-          Blue
+          <div class="current-color__color"></div>
+          <p>Blue</p>
         </button>
       </div>
 
