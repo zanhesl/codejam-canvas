@@ -1,0 +1,58 @@
+body {
+  padding: 10px;
+}
+
+div {
+  box-sizing: border-box;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+.tools {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  border: 1px solid grey;
+
+  box-shadow: 11px 12px 15px -15px rgba(94,94,94,1);
+}
+
+.colors-palette {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  border: 1px solid grey;
+
+  box-shadow: 11px 12px 15px -15px rgba(94,94,94,1);
+}
+
+.resize-canvas {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  border: 1px solid grey;
+
+  box-shadow: 11px 12px 15px -15px rgba(94,94,94,1);
+}
+
+.canvas-container {
+  border: 1px solid grey;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  width: 256px;
+  height: 256px;
+
+  display: flex;
+}
+
+#canvas-main {
+  margin: auto;
+}

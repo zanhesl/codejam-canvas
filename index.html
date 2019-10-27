@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./main.css">
+    <title></title>
+  </head>
+  <body>
+    <header class="main-header">
+      <button type="button" class="menu-button"></button>
+      <h1>CodeJam-Canvas</h1>
+    </header>
+    <main>
+      <div class="tools">
+        <button type="button" class="fill">
+          Fill(F)
+        </button>
+        <button type="button" class="color">
+          Color(C)
+        </button>
+        <button type="button" class="move">
+          Move(M)
+        </button>
+        <button type="button" class="transform">
+          Transform(T)
+        </button>
+      </div>
+
+      <div class="colors-palette">
+        <button type="button" class="current-color">
+          Current Color
+        </button>
+        <button type="button" class="previous-color">
+          Previous Color
+        </button>
+        <button type="button" class="color-selected-1">
+          Red
+        </button>
+        <button type="button" class="color-selected-2">
+          Blue
+        </button>
+      </div>
+
+      <div class="canvas-container">
+        <canvas id="canvas-main" width="256" height="256" class="canvas-main"></canvas>
+      </div>
+
+
+      <div class="resize-canvas">
+        <button type="button" class="option-4x4">
+          4x4
+        </button>
+        <button type="button" class="option-32x32">
+          32x32
+        </button>
+        <button type="button" class="option-256x256">
+          256x256
+        </button>
+      </div>
+    </main>
+    <script type="text/javascript" src="./scripts/images.js"></script>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+  </body>
+</html>
