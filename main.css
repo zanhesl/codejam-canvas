@@ -125,4 +125,5 @@ div {
 #canvas-main {
   margin: auto;
   image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
 }

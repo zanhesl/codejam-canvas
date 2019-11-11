@@ -1,3 +1,4 @@
+
 const DEFAULT_SIZE = 512;
 const PIXEL_SIZE = 1;
 const OPACITY_REFACTOR = 255;
@@ -11,7 +12,7 @@ const imageSrc = document.querySelector(`.source-image`);
 
 function drawBackgroundHash(image) {
   for (let i = 0; i < image.length; i++) {
-    for (var j = 0; j < image[0].length; j++) {
+    for (let j = 0; j < image[0].length; j++) {
       ctx.fillStyle = `#${image[i][j]}`;
       ctx.fillRect(j, i, PIXEL_SIZE, PIXEL_SIZE);
     }
@@ -20,7 +21,7 @@ function drawBackgroundHash(image) {
 
 function drawBackgroundRGB(image){
   for (let i = 0; i < image.length; i++) {
-    for (var j = 0; j < image[0].length; j++) {
+    for (let j = 0; j < image[0].length; j++) {
       ctx.fillStyle = `rgba(${image[i][j][0]}, ${image[i][j][1]}, ${image[i][j][2]}, ${image[i][j][3] / OPACITY_REFACTOR})`;
       ctx.fillRect(j, i, PIXEL_SIZE, PIXEL_SIZE);
     }
